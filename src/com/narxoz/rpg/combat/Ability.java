@@ -28,7 +28,7 @@ package com.narxoz.rpg.combat;
  * - AbilityType getType() (e.g., DAMAGE, BUFF, DEBUFF, ULTIMATE)
  * - Ability clone()   <-- Critical for Prototype pattern!
  */
-public interface Ability {
+public interface Ability extends Cloneable {
     String getName();
     int getDamage();
     String getDescription();
